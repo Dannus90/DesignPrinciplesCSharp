@@ -8,20 +8,20 @@ public static class SingleResponsibilityPrinciple
     public static void Execute()
     {
         var initialEntryList = new List<string>();
-        var srp = new Journal(initialEntryList);
+        var journal = new Journal(initialEntryList);
         
-        srp.AddEntry("FisherJournal");
-        srp.AddEntry("SailorJournal");
+        journal.AddEntry("FisherJournal");
+        journal.AddEntry("SailorJournal");
         
-        Console.WriteLine(srp);
+        Console.WriteLine(journal);
         
-        PersistJournal.SaveToFile(srp, "journal.txt", true);
+        PersistJournal.SaveToFile(journal, "journal.txt", true);
         
-        srp.RemoveEntry(1);
-        srp.AddEntry("WoodCutterJournal");
+        journal.RemoveEntry(1);
+        journal.AddEntry("WoodCutterJournal");
         
-        Console.WriteLine(srp);
+        Console.WriteLine(journal);
         
-        PersistJournal.SaveToFile(srp, "journal.txt", true);
+        PersistJournal.SaveToFile(journal, "journal.txt", true);
     }
 }
