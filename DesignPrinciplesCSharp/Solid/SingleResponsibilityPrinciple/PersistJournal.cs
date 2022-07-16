@@ -8,7 +8,6 @@ public static class PersistJournal
     {
         if (!overwrite && File.Exists(fileName)) return;
         var currentDirectory = Directory.GetCurrentDirectory();
-        Console.WriteLine(currentDirectory);
         File.WriteAllText($"{currentDirectory}/{fileName}", journal.ToString());
     }
 }

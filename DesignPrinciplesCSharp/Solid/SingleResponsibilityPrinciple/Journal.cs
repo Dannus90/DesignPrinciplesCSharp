@@ -3,17 +3,15 @@ namespace DesignPrinciplesCSharp.Solid.SingleResponsibilityPrinciple;
 public class Journal
 {
     private readonly List<string> _entries;
-    private static int _count;
 
-    public Journal(List<string> entries, int count)
+    public Journal(List<string> entries)
     {
         _entries = entries;
-        _count = count;
     }
 
     public void AddEntry(string text)
     {
-        _entries.Add($"{++_count}: {text}");
+        _entries.Add($"{_entries.Count + 1}: {text}");
     }
 
     public void RemoveEntry(int index)
