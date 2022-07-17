@@ -1,8 +1,10 @@
 using DesignPrinciplesCSharp.Solid.OpenClosedPrinciple.Constants;
 
 namespace DesignPrinciplesCSharp.Solid.OpenClosedPrinciple;
-
-public class OpenClosedPrinciple
+/// <summary>
+/// Classes should be open for extension (add new filters) but they should be closed for modification.
+/// </summary>
+public static class OpenClosedPrinciple
 {
     public static void Execute()
     {
@@ -15,6 +17,13 @@ public class OpenClosedPrinciple
         
         Console.WriteLine("Green products (old):");
         foreach (var product in ProductFilter.FilterByColor(products, Color.Green))
+        {
+            Console.WriteLine($"( - {product.Name} is green)");
+        }
+
+        var cleanerFilter = new CleanerFilter();
+        Console.WriteLine("Green products (new):");
+        foreach (var product in cleanerFilter.Filter(products, new ColorSpecification(Color.Green)))
         {
             Console.WriteLine($"( - {product.Name} is green)");
         }
