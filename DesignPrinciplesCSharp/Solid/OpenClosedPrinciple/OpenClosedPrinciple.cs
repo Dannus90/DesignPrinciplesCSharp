@@ -3,6 +3,7 @@ using DesignPrinciplesCSharp.Solid.OpenClosedPrinciple.Constants;
 namespace DesignPrinciplesCSharp.Solid.OpenClosedPrinciple;
 /// <summary>
 /// Classes should be open for extension (add new filters) but they should be closed for modification.
+/// Make usage of interfaces. Don't add methods to CleanerFilter for example. Instead make new classes that implement ISpecification.
 /// </summary>
 public static class OpenClosedPrinciple
 {

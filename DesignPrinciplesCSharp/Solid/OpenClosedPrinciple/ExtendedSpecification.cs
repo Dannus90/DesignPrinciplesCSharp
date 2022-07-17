@@ -4,7 +4,7 @@ namespace DesignPrinciplesCSharp.Solid.OpenClosedPrinciple;
 
 public class ExtendedSpecification<T> : ISpecification<T>
 {
-    private ISpecification<T> _first, _second;
+    private readonly ISpecification<T> _first, _second;
 
     public ExtendedSpecification(ISpecification<T> first, ISpecification<T> second)
     {
