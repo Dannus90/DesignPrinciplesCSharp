@@ -5,7 +5,7 @@ namespace DesignPrinciplesCSharp.Solid.OpenClosedPrinciple;
 
 public class SizeSpecification : ISpecification<Product>
 {
-    private Size _size;
+    private readonly Size _size;
 
     public SizeSpecification(Size size)
     {

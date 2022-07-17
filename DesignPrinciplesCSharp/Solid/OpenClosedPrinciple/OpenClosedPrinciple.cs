@@ -27,5 +27,14 @@ public static class OpenClosedPrinciple
         {
             Console.WriteLine($"( - {product.Name} is green)");
         }
+
+        Console.WriteLine("Large blue items");
+        foreach (var product in cleanerFilter.Filter(products, 
+     new ExtendedSpecification<Product>(
+          new ColorSpecification(Color.Blue),
+          new SizeSpecification(Size.Large))))
+        {
+            Console.WriteLine($"( - {product.Name} is large and blue)");
+        }
     }
 }

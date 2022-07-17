@@ -4,7 +4,7 @@ namespace DesignPrinciplesCSharp.Solid.OpenClosedPrinciple;
 
 public class Product
 {
-    public string Name;
+    public readonly string Name;
     public readonly Color Color;
     public readonly Size Size;
 
