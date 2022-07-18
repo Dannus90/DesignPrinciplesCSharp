@@ -5,7 +5,6 @@ using DesignPrinciplesCSharp.Solid.OpenClosedPrinciple;
 using DesignPrinciplesCSharp.Solid.SingleResponsibilityPrinciple;
 using static Builder.Builder;
 
-
 // SOLID
 SingleResponsibilityPrinciple.Execute();
 OpenClosedPrinciple.Execute();
