@@ -31,8 +31,7 @@ public static class Builder
         
         // Cleaner way to do it
         var builder = new HtmlBuilder("ul");
-        builder.AddChild("li", "hello");
-        builder.AddChild("li", "world");
+        builder.AddChild("li", "hello").AddChild("li", "world");
         WriteLine(builder.ToString());
     }
 }
