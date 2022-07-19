@@ -28,5 +28,11 @@ public static class Builder
 
         sb.Append("</ul>");
         WriteLine(sb);
+        
+        // Cleaner way to do it
+        var builder = new HtmlBuilder("ul");
+        builder.AddChild("li", "hello");
+        builder.AddChild("li", "world");
+        WriteLine(builder.ToString());
     }
 }
