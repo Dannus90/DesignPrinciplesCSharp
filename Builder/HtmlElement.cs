@@ -11,6 +11,8 @@ public class HtmlElement
 
     public HtmlElement()
     {
+        Name = "";
+        Text = "";
     }
 
     public HtmlElement(string name, string text)
