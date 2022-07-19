@@ -1,9 +1,32 @@
-namespace Builder;
+using System.Text;
+using static System.Console;
 
+namespace Builder;
+/// <summary>
+/// Having an object with 10 constructor arguments is not productive.s
+/// Instead, opt for piecewise construction.
+/// Builder provides an api for constructing objects that are complicated to construct succinctly.
+/// </summary>
 public static class Builder
 {
     public static void RunBuilder()
     {
-        Console.WriteLine("Running builder");
+        const string hello = "hello";
+        var sb = new StringBuilder();
+        sb.Append("<p>");
+        sb.Append(hello);
+        sb.Append("</p>");
+        WriteLine(sb);
+
+        var words = new[] { "hello", "world" };
+        sb.Clear();
+        sb.Append("<ul>");
+        foreach (var word in words)
+        {
+            sb.Append($"<li>{word}</li>");
+        }
+
+        sb.Append("</ul>");
+        WriteLine(sb);
     }
 }
