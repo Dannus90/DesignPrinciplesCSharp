@@ -1,5 +1,6 @@
 using System.Text;
 using static System.Console;
+using static Builder.FluentBuilder.FluentBuilder;
 
 namespace Builder;
 /// <summary>
@@ -33,5 +34,7 @@ public static class Builder
         var builder = new HtmlBuilder("ul");
         builder.AddChild("li", "hello").AddChild("li", "world");
         WriteLine(builder.ToString());
+        
+        ExecuteFluentBuilder();
     }
 }
