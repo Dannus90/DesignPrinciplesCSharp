@@ -8,5 +8,11 @@ public static class FunctionalBuilder
             .Called("sarah")
             .WorksAs("Bartender")
             .Build();
+
+        var newPerson = new PersonBuilderNew()
+            .Called("John");
+
+        Console.WriteLine(person);
+        Console.WriteLine(newPerson);
     }
 }
