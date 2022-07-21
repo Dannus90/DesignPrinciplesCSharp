@@ -3,14 +3,14 @@ using Builder.StepwiseBuilder.Interfaces;
 
 namespace Builder.StepwiseBuilder;
 
-public class CarBuilder
+public static class CarBuilder
 {
     private class Impl : 
         ISpecifyCarType, 
         ISpecifyWheelSize, 
         IBuildCar
     {
-        private Car _car = new Car();
+        private readonly Car _car = new();
         
         public ISpecifyWheelSize OfType(CarType type)
         {
