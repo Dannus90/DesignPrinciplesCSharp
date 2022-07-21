@@ -1,9 +1,12 @@
 namespace Builder.FunctionalBuilder;
 
-public class FunctionalBuilder
+public static class FunctionalBuilder
 {
     public static void ExecuteFunctionalBuilder()
     {
-        Console.WriteLine("Executing functional builder");
+        var person = new PersonBuilder()
+            .Called("sarah")
+            .WorksAs("Bartender")
+            .Build();
     }
 }
