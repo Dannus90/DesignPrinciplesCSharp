@@ -1,6 +1,7 @@
 using System.Text;
 using static System.Console;
 using static Builder.FluentBuilder.FluentBuilder;
+using static Builder.StepwiseBuilder.StepwiseBuilder;
 
 namespace Builder;
 /// <summary>
@@ -36,5 +37,6 @@ public static class Builder
         WriteLine(builder.ToString());
         
         ExecuteFluentBuilder();
+        ExecuteStepwiseBuilder();
     }
 }

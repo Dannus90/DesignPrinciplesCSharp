@@ -2,8 +2,8 @@ namespace Builder.FluentBuilder;
 
 public class Person
 {
-    public string Name;
-    public string Position;
+    public string Name = "";
+    public string Position = "";
 
     public class Builder : PersonJobBuilder<Builder>
     {

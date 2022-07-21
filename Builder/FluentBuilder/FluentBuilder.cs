@@ -9,7 +9,6 @@ public static class FluentBuilder
 {
     public static void ExecuteFluentBuilder()
     {
-        var personBuilder = new PersonJobBuilder();
         var me = Person.New
             .Called("John")
             .WorksAsA("quant")
