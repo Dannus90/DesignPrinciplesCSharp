@@ -10,5 +10,7 @@ public static class StepwiseBuilder
             .OfType(CarType.Crossover)
             .WithWheels(18)
             .Build();
+
+        Console.WriteLine(car);
     }
 }
