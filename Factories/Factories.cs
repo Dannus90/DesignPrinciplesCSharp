@@ -1,4 +1,5 @@
 ﻿using static Factories.PointExercise.PointExercise;
+using static Factories.AsyncFactory.AsyncFactory;
 
 namespace Factories;
 
@@ -10,5 +11,6 @@ public static class Factories
     public static void RunFactories()
     {
         ExecutePointExercise();
+        ExecuteAsyncFactory();
     }
 }
