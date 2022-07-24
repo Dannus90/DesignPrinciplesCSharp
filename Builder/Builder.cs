@@ -1,5 +1,4 @@
 using System.Text;
-using Builder.Exercise;
 using static System.Console;
 using static Builder.FluentBuilder.FluentBuilder;
 using static Builder.StepwiseBuilder.StepwiseBuilder;
