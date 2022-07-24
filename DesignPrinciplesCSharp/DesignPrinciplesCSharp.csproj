@@ -7,5 +7,6 @@
     </PropertyGroup>
     <ItemGroup>
       <ProjectReference Include="..\Builder\Builder.csproj" />
+      <ProjectReference Include="..\Factories\Factories.csproj" />
     </ItemGroup>
 </Project>

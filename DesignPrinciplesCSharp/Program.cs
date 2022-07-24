@@ -4,6 +4,7 @@ using DesignPrinciplesCSharp.Solid.LiskovSubstitutionPrinciple;
 using DesignPrinciplesCSharp.Solid.OpenClosedPrinciple;
 using DesignPrinciplesCSharp.Solid.SingleResponsibilityPrinciple;
 using static Builder.Builder;
+using static Factories.Factories;
 
 // SOLID
 SingleResponsibilityPrinciple.Execute();
@@ -14,3 +15,6 @@ DependencyInversionPrinciple.Execute();
 
 // BUILDER
 RunBuilder();
+
+// FACTORIES
+RunFactories();

@@ -7,7 +7,7 @@ namespace Factories;
 /// </summary>
 public static class Factories
 {
-    public static void Execute()
+    public static void RunFactories()
     {
         ExecutePointExercise();
     }
