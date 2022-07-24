@@ -1,9 +1,11 @@
 using System.Text;
+using Builder.Exercise;
 using static System.Console;
 using static Builder.FluentBuilder.FluentBuilder;
 using static Builder.StepwiseBuilder.StepwiseBuilder;
 using static Builder.FunctionalBuilder.FunctionalBuilder;
 using static Builder.FacetedBuilder.FacetedBuilder;
+using static Builder.Exercise.ExecuteExercise;
 
 namespace Builder;
 /// <summary>
@@ -42,5 +44,6 @@ public static class Builder
         ExecuteStepwiseBuilder();
         ExecuteFunctionalBuilder();
         ExecuteFacetedBuilder();
+        RunExercise();
     }
 }
