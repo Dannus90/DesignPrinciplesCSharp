@@ -4,6 +4,7 @@ public static class PointExercise
 {
     public static void ExecutePointExercise()
     {
-        Console.WriteLine("Hello");
+        var point = Point.NewPolarPoint(1.0, Math.PI / 2);
+        Console.WriteLine(point);
     }
 }
