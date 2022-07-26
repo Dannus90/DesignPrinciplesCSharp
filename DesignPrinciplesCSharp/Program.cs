@@ -17,4 +17,4 @@ DependencyInversionPrinciple.Execute();
 RunBuilder();
 
 // FACTORIES
-RunFactories();
+await RunFactories();

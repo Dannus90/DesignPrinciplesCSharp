@@ -4,6 +4,9 @@ public static class ObjectTrackingAndBulkReplacement
 {
     public static void ExecuteObjectTrackingAndBulkReplacement()
     {
-        Console.WriteLine("Executing");
+        var factory = new TrackingThemeFactory();
+        factory.CreateTheme(false);
+        factory.CreateTheme(true);
+        Console.WriteLine(factory.Info);
     }
 }
