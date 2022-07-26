@@ -14,8 +14,7 @@ public class Foo
 
     public static Task<Foo> CreateAsync()
     {
-        var result = new Foo();
-        return result.InitAsync();
+        return new Foo().InitAsync();
     }
     
 }
