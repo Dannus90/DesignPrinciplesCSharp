@@ -1,5 +1,6 @@
 ﻿using static Factories.PointExercise.PointExercise;
 using static Factories.AsyncFactory.AsyncFactory;
+using static Factories.AbstractFactory.AbstractFactory;
 using static Factories.ObjectTrackingAndBulkReplacement.ObjectTrackingAndBulkReplacement;
 
 namespace Factories;
@@ -14,5 +15,6 @@ public static class Factories
         ExecutePointExercise();
         await ExecuteAsyncFactory(); 
         ExecuteObjectTrackingAndBulkReplacement();
+        ExecuteAbstractFactory();
     }
 }
