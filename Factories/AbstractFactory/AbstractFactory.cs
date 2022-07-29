@@ -10,7 +10,7 @@ public static class AbstractFactory
     public static void ExecuteAbstractFactory()
     {
         var machine = new HotDrinkMachine();
-        var drink = machine.MakeDrink(AvailableDrink.Tea, 100);
+        var drink = machine.MakeDrink();
         drink.Consume();
     }
 }
