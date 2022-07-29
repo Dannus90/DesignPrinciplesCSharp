@@ -12,8 +12,8 @@ public class HotDrinkMachine
         foreach (AvailableDrink drink in Enum.GetValues(typeof(AvailableDrink)))
         {
             var factory = (IHotDrinkFactory) Activator.CreateInstance(
-                Type.GetType("Factories.AbstractFactory.Constants." + Enum.GetName(typeof(AvailableDrink), drink) + "Factory") 
-                ?? throw new InvalidOperationException())!;
+                Type.GetType("Factories.AbstractFactory." + Enum.GetName(typeof(AvailableDrink), drink) + "Factory") 
+                ?? throw new InvalidOperationException("Instance not found"))!;
             
             _factories.Add(drink, factory);
         }
