@@ -14,9 +14,10 @@ public static class Factories
     public static async Task RunFactories()
     {
         ExecutePointExercise();
-        await ExecuteAsyncFactory(); 
+        await ExecuteAsyncFactory();
         ExecuteObjectTrackingAndBulkReplacement();
         ExecuteAbstractFactory();
+        Console.WriteLine("Executing");
         ExecuteFactoryExercise();
     }
 }

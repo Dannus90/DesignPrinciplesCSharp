@@ -48,7 +48,5 @@ public class HotDrinkMachine
 
             Console.WriteLine("Incorrect input! Try again!");
         }
-
-
     }
 }

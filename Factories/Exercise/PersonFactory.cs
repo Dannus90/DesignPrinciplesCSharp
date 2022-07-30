@@ -13,9 +13,8 @@ public class PersonFactory
         var person = new Person()
         {
             Name = name,
-            Id = _currentId
+            Id = _currentId++
         };
-        _currentId++;
 
         return person;
     }
