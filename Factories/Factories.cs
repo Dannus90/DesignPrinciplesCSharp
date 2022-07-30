@@ -2,6 +2,7 @@
 using static Factories.AsyncFactory.AsyncFactory;
 using static Factories.AbstractFactory.AbstractFactory;
 using static Factories.ObjectTrackingAndBulkReplacement.ObjectTrackingAndBulkReplacement;
+using static Factories.Exercise.FactoryExercise;
 
 namespace Factories;
 
@@ -16,5 +17,6 @@ public static class Factories
         await ExecuteAsyncFactory(); 
         ExecuteObjectTrackingAndBulkReplacement();
         ExecuteAbstractFactory();
+        ExecuteFactoryExercise();
     }
 }

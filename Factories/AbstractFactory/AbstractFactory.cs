@@ -1,5 +1,3 @@
-using Factories.AbstractFactory.Constants;
-
 namespace Factories.AbstractFactory;
 
 /// <summary>
