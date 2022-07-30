@@ -5,6 +5,7 @@ using DesignPrinciplesCSharp.Solid.OpenClosedPrinciple;
 using DesignPrinciplesCSharp.Solid.SingleResponsibilityPrinciple;
 using static Builder.Builder;
 using static Factories.Factories;
+using static Prototype.Prototype;
 
 // SOLID
 SingleResponsibilityPrinciple.Execute();
@@ -18,3 +19,6 @@ RunBuilder();
 
 // FACTORIES
 await RunFactories();
+
+// PROTOTYPE
+RunPrototypes();
