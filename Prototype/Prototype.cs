@@ -1,4 +1,6 @@
-﻿namespace Prototype;
+﻿using static Prototype.Clonable.Clonable;
+
+namespace Prototype;
 
 /// <summary>
 /// Complicated objects aren't designed from scratch. They reiterate existing designs.
@@ -10,6 +12,6 @@ public static class Prototype
 {
     public static void RunPrototypes()
     {
-        Console.WriteLine("Running prototypes");
+        ExecuteClonable();
     }
 }
