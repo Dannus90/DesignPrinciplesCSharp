@@ -1,6 +1,6 @@
 namespace Prototype.Cloneable;
 
-public class Address : ICloneable
+public class Address
 {
     public string StreetName;
     public int HouseNumber;
@@ -16,8 +16,9 @@ public class Address : ICloneable
         return $"{nameof(StreetName)}: {StreetName}, {nameof(HouseNumber)}: {HouseNumber}";
     }
 
-    public object Clone()
+    public Address(Address other)
     {
-        return new Address(StreetName, HouseNumber);
+        StreetName = other.StreetName;
+        HouseNumber = other.HouseNumber;
     }
 }

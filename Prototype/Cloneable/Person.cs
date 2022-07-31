@@ -1,6 +1,6 @@
 namespace Prototype.Cloneable;
 
-public class Person : ICloneable
+public class Person
 {
     public string[] Names;
     public Address Address;
@@ -16,8 +16,9 @@ public class Person : ICloneable
         return $"{nameof(Names)}: {string.Join(" ", Names)}, {nameof(Address)}: {Address}";
     }
 
-    public object Clone()
+    public Person(Person other)
     {
-        return new Person(Names, (Address) Address.Clone());
+        Names = other.Names;
+        Address = new Address(other.Address);
     }
 }
