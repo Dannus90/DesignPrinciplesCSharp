@@ -1,11 +1,11 @@
-namespace Prototype.Clonable;
+namespace Prototype.Cloneable;
 
 /// <summary>
-/// IClonable is not good for deep copy which is used by the prototype pattern.
+/// ICloneable is not good for deep copy which is used by the prototype pattern.
 /// </summary>
-public static class Clonable
+public static class Cloneable
 {
-    public static void ExecuteClonable()
+    public static void ExecuteCloneable()
     {
         var john = new Person(new[] { "John", "Smith" }, 
             new Address("London Road", 123));

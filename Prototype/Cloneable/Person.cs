@@ -1,4 +1,4 @@
-namespace Prototype.Clonable;
+namespace Prototype.Cloneable;
 
 public class Person : ICloneable
 {

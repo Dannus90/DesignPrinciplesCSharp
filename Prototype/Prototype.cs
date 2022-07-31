@@ -1,4 +1,4 @@
-﻿using static Prototype.Clonable.Clonable;
+﻿using static Prototype.Cloneable.Cloneable;
 
 namespace Prototype;
 
@@ -12,6 +12,6 @@ public static class Prototype
 {
     public static void RunPrototypes()
     {
-        ExecuteClonable();
+        ExecuteCloneable();
     }
 }
