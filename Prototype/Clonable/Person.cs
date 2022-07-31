@@ -1,6 +1,6 @@
 namespace Prototype.Clonable;
 
-public class Person
+public class Person : ICloneable
 {
     public string[] Names;
     public Address Address;
@@ -14,5 +14,10 @@ public class Person
     public override string ToString()
     {
         return $"{nameof(Names)}: {string.Join(" ", Names)}, {nameof(Address)}: {Address}";
+    }
+
+    public object Clone()
+    {
+        return new Person(Names, (Address) Address.Clone());
     }
 }

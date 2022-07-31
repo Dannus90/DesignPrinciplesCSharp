@@ -1,6 +1,6 @@
 namespace Prototype.Clonable;
 
-public class Address
+public class Address : ICloneable
 {
     public string StreetName;
     public int HouseNumber;
@@ -14,5 +14,10 @@ public class Address
     public override string ToString()
     {
         return $"{nameof(StreetName)}: {StreetName}, {nameof(HouseNumber)}: {HouseNumber}";
+    }
+
+    public object Clone()
+    {
+        return new Address(StreetName, HouseNumber);
     }
 }
