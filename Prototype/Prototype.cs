@@ -1,4 +1,5 @@
 ﻿using static Prototype.Cloneable.Cloneable;
+using static Prototype.PrototypeInheritance.PrototypeInheritance;
 
 namespace Prototype;
 
@@ -13,5 +14,6 @@ public static class Prototype
     public static void RunPrototypes()
     {
         ExecuteCloneable();
+        ExecutePrototypeInheritance();
     }
 }
