@@ -12,7 +12,7 @@ public static class Cloneable
         var john = new Person(new[] { "John", "Smith" }, 
             new Address("London Road", 123));
 
-        var jane = new Person(john);
+        var jane = john.DeepCopy();
         jane.Address.HouseNumber = 321;
         
         Console.WriteLine(john);
