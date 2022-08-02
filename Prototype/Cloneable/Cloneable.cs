@@ -4,6 +4,7 @@ namespace Prototype.Cloneable;
 /// ICloneable is not good for deep copy which is used by the prototype pattern.
 /// Returns an object instead of something strongly typed.
 /// Constructor pattern is better but not the best solution.
+/// Deep copy interface is still a problem since we have to specify deep copy on each underlying object.
 /// </summary>
 public static class Cloneable
 {
