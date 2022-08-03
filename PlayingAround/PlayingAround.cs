@@ -12,10 +12,10 @@ public static class PlayingAround
         var userById = userRepository.GetEntityById(Guid.NewGuid());
         var userByEmail = userRepository.GetEntityByEmail(string.Empty);
         var users = userRepository.GetEntities();
-        
+
         WriteLine(userById);
         WriteLine(userByEmail);
-        
+
         foreach (var user in users)
         {
             WriteLine(user);
