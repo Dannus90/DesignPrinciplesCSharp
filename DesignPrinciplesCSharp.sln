@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factories", "Factories\Fact
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype", "Prototype\Prototype.csproj", "{5A7D9A7B-6560-4979-B22B-83B9FC9A0DAB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayingAround", "PlayingAround\PlayingAround.csproj", "{2D103077-AB8E-4DFC-9EB0-DF455AC3D260}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,5 +33,9 @@ Global
 		{5A7D9A7B-6560-4979-B22B-83B9FC9A0DAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A7D9A7B-6560-4979-B22B-83B9FC9A0DAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A7D9A7B-6560-4979-B22B-83B9FC9A0DAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D103077-AB8E-4DFC-9EB0-DF455AC3D260}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D103077-AB8E-4DFC-9EB0-DF455AC3D260}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D103077-AB8E-4DFC-9EB0-DF455AC3D260}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D103077-AB8E-4DFC-9EB0-DF455AC3D260}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

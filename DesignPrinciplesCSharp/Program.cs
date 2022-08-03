@@ -6,6 +6,7 @@ using DesignPrinciplesCSharp.Solid.SingleResponsibilityPrinciple;
 using static Builder.Builder;
 using static Factories.Factories;
 using static Prototype.Prototype;
+using static PlayingAround.PlayingAround;
 
 // SOLID
 SingleResponsibilityPrinciple.Execute();
@@ -22,3 +23,6 @@ await RunFactories();
 
 // PROTOTYPE
 RunPrototypes();
+
+// PLAYING_AROUND
+ExecutePlayingAround();

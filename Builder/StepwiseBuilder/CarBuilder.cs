@@ -22,10 +22,12 @@ public static class CarBuilder
         {
             switch (_car.Type)
             {
-                case CarType.Crossover when size <17 || size > 20:
+                case CarType.Crossover when size is < 17 or > 20:
                     break;
-                case CarType.Sedan when size < 15 || size > 17:
-                    throw new ArgumentException($"Wrong size of wheen for {_car.Type}");
+                case CarType.Sedan when size is < 15 or > 17:
+                    throw new ArgumentException($"Wrong size of when for {_car.Type}");
+                default:
+                    throw new ArgumentOutOfRangeException($"{nameof(size)} is out of range");
             }
 
             _car.WheelSize = size;
