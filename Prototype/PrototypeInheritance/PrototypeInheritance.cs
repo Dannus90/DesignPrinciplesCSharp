@@ -14,7 +14,6 @@ public static class PrototypeInheritance
             StreetName = "Ponnygatan"
         };
         john.Salary = 321000;
-
         var copy = john.DeepCopy();
         copy.Names[1] = "Smith";
         copy.Address.HouseNumber++;

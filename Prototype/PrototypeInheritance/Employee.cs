@@ -20,9 +20,10 @@ public class Employee : Person, IDeepCopyable<Employee>
         Salary = salary;
     }
 
-    public Employee DeepCopy()
-    {
-        return new Employee((string[]) Names.Clone(), Address.DeepCopy(), Salary);
+    public void CopyTo(Employee target)
+    {  
+        base.CopyTo(target);
+        target.Salary = Salary;
     }
 
     public override string ToString()

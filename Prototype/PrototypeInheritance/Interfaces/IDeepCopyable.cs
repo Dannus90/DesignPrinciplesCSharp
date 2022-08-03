@@ -1,6 +1,14 @@
 namespace Prototype.PrototypeInheritance.Interfaces;
 
 public interface IDeepCopyable<T>
+    where T : new()
 {
-    T DeepCopy();
+    void CopyTo(T target);
+
+    T DeepCopy()
+    {
+        var t = new T();
+        CopyTo(t);
+        return t;
+    }
 }
