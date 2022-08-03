@@ -1,9 +1,11 @@
+using Prototype.PrototypeInheritance.Interfaces;
+
 namespace Prototype.PrototypeInheritance;
 
-public class Person
+public class Person : IDeepCopyable<Person>
 {
     public string[] Names = Array.Empty<string>();
-    public Address Address = new Address();
+    public Address Address = new();
 
     public Person()
     {
@@ -15,8 +17,13 @@ public class Person
         Address = address;
     }
 
+    public Person DeepCopy()
+    {
+        return new Person((string[])Names.Clone(), Address.DeepCopy());
+    }
+
     public override string ToString()
     {
-        return $"{nameof(Names)}: {Names}, {nameof(Address)}: {Address}";
+        return $"{nameof(Names)}: {string.Join(", ", Names)}, {nameof(Address)}: {Address}";
     }
 }

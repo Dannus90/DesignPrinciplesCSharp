@@ -1,6 +1,8 @@
+using Prototype.PrototypeInheritance.Interfaces;
+
 namespace Prototype.PrototypeInheritance;
 
-public class Employee : Person
+public class Employee : Person, IDeepCopyable<Employee>
 {
     public int Salary;
 
@@ -16,6 +18,11 @@ public class Employee : Person
     public Employee(string[] names, Address address, int salary) : base(names, address)
     {
         Salary = salary;
+    }
+
+    public Employee DeepCopy()
+    {
+        return new Employee((string[]) Names.Clone(), Address.DeepCopy(), Salary);
     }
 
     public override string ToString()

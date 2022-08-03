@@ -1,6 +1,8 @@
+using Prototype.PrototypeInheritance.Interfaces;
+
 namespace Prototype.PrototypeInheritance;
 
-public class Address
+public class Address : IDeepCopyable<Address>
 {
     public string StreetName = "";
     public int HouseNumber;
@@ -13,6 +15,11 @@ public class Address
     {
         StreetName = streetName ?? throw new ArgumentNullException(nameof(streetName));
         HouseNumber = houseNumber;
+    }
+
+    public Address DeepCopy()
+    {
+        return (Address)MemberwiseClone();
     }
 
     public override string ToString()
