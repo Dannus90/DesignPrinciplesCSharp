@@ -1,11 +1,9 @@
-using Prototype.Cloneable.Interfaces;
-
 namespace Prototype.Cloneable;
 
-public class Person : IPrototype<Person>
+public class Person
 {
-    public string[] Names;
-    public Address Address;
+    public string[] Names = {};
+    public Address Address = new Address();
 
     public Person(string[] names, Address address)
     {
@@ -13,11 +11,10 @@ public class Person : IPrototype<Person>
         Address = address ?? throw new ArgumentNullException(nameof(address));;
     }
 
-    public Person DeepCopy()
+    public Person()
     {
-        return new Person(Names, Address.DeepCopy());
     }
-
+    
     public override string ToString()
     {
         return $"{nameof(Names)}: {string.Join(" ", Names)}, {nameof(Address)}: {Address}";
