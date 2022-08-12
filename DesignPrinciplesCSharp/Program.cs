@@ -7,6 +7,7 @@ using static Builder.Builder;
 using static Factories.Factories;
 using static Prototype.Prototype;
 using static PlayingAround.PlayingAround;
+using static Singleton.Singleton;
 
 // SOLID
 SingleResponsibilityPrinciple.Execute();
@@ -26,3 +27,6 @@ RunPrototypes();
 
 // PLAYING_AROUND
 ExecutePlayingAround();
+
+// SINGLETON
+ExecuteSingleton();

@@ -1,5 +1,3 @@
-using System.Reflection;
-
 namespace DesignPrinciplesCSharp.Solid.SingleResponsibilityPrinciple;
 
 public static class PersistJournal

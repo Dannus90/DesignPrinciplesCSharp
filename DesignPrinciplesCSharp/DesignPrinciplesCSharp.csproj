@@ -10,5 +10,6 @@
       <ProjectReference Include="..\Factories\Factories.csproj" />
       <ProjectReference Include="..\PlayingAround\PlayingAround.csproj" />
       <ProjectReference Include="..\Prototype\Prototype.csproj" />
+      <ProjectReference Include="..\Singleton\Singleton.csproj" />
     </ItemGroup>
 </Project>
