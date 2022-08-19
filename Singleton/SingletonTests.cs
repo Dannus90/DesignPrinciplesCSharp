@@ -24,4 +24,13 @@ public class SingletonTests
         
         Assert.That(tp, Is.EqualTo(17500000 + 17400000));
     }
+    
+    [Test]
+    public void ConfigurablePopulationTest()
+    {
+        var rf = new ConfigurableRecordFinder(new DummyDatabase());
+        var names = new [] { "alpha", "gamma" };
+        var tp = rf.GetTotalPopulation(names);
+        Assert.That(tp, Is.EqualTo(4));
+    }
 }
