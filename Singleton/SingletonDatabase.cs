@@ -14,9 +14,8 @@ public class SingletonDatabase : IDatabase
         Console.WriteLine("Initializing database");
         var directory = Environment.CurrentDirectory;
         var parentDirectory = Directory.GetParent(directory)?.Parent?.Parent?.FullName;
-        Console.WriteLine(new FileInfo(typeof(IDatabase).Assembly.Location).DirectoryName);
-        Console.WriteLine(Path.Combine(new FileInfo(typeof(IDatabase).Assembly.Location).DirectoryName ?? throw new InvalidOperationException(), "capitals.txt"));
-        _capitals = File.ReadAllLines($"{parentDirectory}/capitals.txt").
+        var capitals = Path.Combine(parentDirectory ?? throw new InvalidOperationException(), "capitals.txt");
+        _capitals = File.ReadAllLines($"{capitals}").
             Batch(2).ToDictionary(
                 list => 
                     list.ElementAt(0).ToString(),
