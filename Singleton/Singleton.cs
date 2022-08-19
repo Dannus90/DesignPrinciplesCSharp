@@ -1,4 +1,6 @@
-﻿namespace Singleton;
+﻿using static Singleton.Monostate.Monostate;
+
+namespace Singleton;
 
 /// <summary>
 /// Problem with hardcoded reference for a database for example when using singleton. 
@@ -11,5 +13,7 @@ public static class Singleton
         var db = SingletonDatabase.Instance;
         const string city = "Tokyo";
         Console.WriteLine($"{city} has population {db.GetPopulation(city)}");
+        
+        RunMonostate();
     }
 }
