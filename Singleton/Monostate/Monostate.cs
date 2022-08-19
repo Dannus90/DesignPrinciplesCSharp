@@ -8,11 +8,16 @@ public static class Monostate
 {
     public static void RunMonostate()
     {
-        var ceo = new CEO();
-        ceo.Name = "Adam Smith";
-        ceo.Age = 55;
+        var ceo = new CEO
+        {
+            Name = "Adam Smith",
+            Age = 55
+        };
 
+        Console.WriteLine(ceo);
         var ceo2 = new CEO();
+
+        // Will be same
         Console.WriteLine(ceo2);
     }
 }
