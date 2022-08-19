@@ -1,5 +1,8 @@
 ﻿namespace Singleton;
 
+/// <summary>
+/// Problem with hardcoded reference for a database for example when using singleton. 
+/// </summary>
 public static class Singleton
 {
     public static void ExecuteSingleton()
